@@ -143,6 +143,7 @@
             this.comboMaMH.Name = "comboMaMH";
             this.comboMaMH.Size = new System.Drawing.Size(223, 36);
             this.comboMaMH.TabIndex = 9;
+            this.comboMaMH.Click += new System.EventHandler(this.comboMaMH_Click);
             // 
             // txtNoidung
             // 
@@ -159,6 +160,7 @@
             this.btnTimMHTheoND.TabIndex = 11;
             this.btnTimMHTheoND.Text = "Tìm kiếm";
             this.btnTimMHTheoND.UseVisualStyleBackColor = true;
+            this.btnTimMHTheoND.Click += new System.EventHandler(this.btnTimMHTheoND_Click);
             // 
             // btnTimMHtheoma
             // 
@@ -168,6 +170,7 @@
             this.btnTimMHtheoma.TabIndex = 12;
             this.btnTimMHtheoma.Text = "Tìm kiếm";
             this.btnTimMHtheoma.UseVisualStyleBackColor = true;
+            this.btnTimMHtheoma.Click += new System.EventHandler(this.btnTimMHtheoma_Click);
             // 
             // btnHienThiTatCa
             // 
@@ -194,6 +197,7 @@
             this.dtgvMH.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgvMH.Size = new System.Drawing.Size(1136, 199);
             this.dtgvMH.TabIndex = 14;
+            this.dtgvMH.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvMH_CellContentClick);
             // 
             // btnThemMoi
             // 
@@ -224,6 +228,7 @@
             this.btnSua.TabIndex = 17;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -233,6 +238,7 @@
             this.btnXoa.TabIndex = 18;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnXemDSSV
             // 
