@@ -112,20 +112,25 @@
             // 
             // txtMaMH
             // 
+            this.txtMaMH.Enabled = false;
             this.txtMaMH.Location = new System.Drawing.Point(147, 66);
             this.txtMaMH.Name = "txtMaMH";
             this.txtMaMH.Size = new System.Drawing.Size(245, 34);
             this.txtMaMH.TabIndex = 6;
+            this.txtMaMH.TextChanged += new System.EventHandler(this.txtMaMH_TextChanged);
             // 
             // txtTenMH
             // 
+            this.txtTenMH.Enabled = false;
             this.txtTenMH.Location = new System.Drawing.Point(147, 131);
             this.txtTenMH.Name = "txtTenMH";
             this.txtTenMH.Size = new System.Drawing.Size(245, 34);
             this.txtTenMH.TabIndex = 7;
+            this.txtTenMH.TextChanged += new System.EventHandler(this.txtTenMH_TextChanged);
             // 
             // txtSoTiet
             // 
+            this.txtSoTiet.Enabled = false;
             this.txtSoTiet.Location = new System.Drawing.Point(147, 206);
             this.txtSoTiet.Name = "txtSoTiet";
             this.txtSoTiet.Size = new System.Drawing.Size(245, 34);
@@ -198,15 +203,18 @@
             this.btnThemMoi.TabIndex = 15;
             this.btnThemMoi.Text = "Thêm";
             this.btnThemMoi.UseVisualStyleBackColor = true;
+            this.btnThemMoi.Click += new System.EventHandler(this.btnThemMoi_Click);
             // 
             // btnLuu
             // 
+            this.btnLuu.Enabled = false;
             this.btnLuu.Location = new System.Drawing.Point(147, 512);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 35);
             this.btnLuu.TabIndex = 16;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnSua
             // 

@@ -70,5 +70,26 @@ namespace QuanLiSinhVien
             }
             return dt;
         }
+
+        // hàm dung cho cả sua, xoa, update
+        public static int ThaoTacCSDL(string query)
+        {
+            int kq = 0;
+            try
+            {
+                OpenConnection();
+                SqlCommand cmd = new SqlCommand(query, connection);
+                kq = cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                CloseConnection();
+            }
+            return kq;
+        }
     }
 }
